@@ -4,7 +4,11 @@ Script in python che permette di tenere traccia dei followers di un account. Si 
 
 ### Requisiti
 * Account Instagram attivo;
+* Pacchetto __instaloader__;
 * Per controllare account privati è necessario seguire quell'account.
 
 ### Prima di eseguire
-Inserire rispettivamente i dati personali: user e password tra le " " nella 6 riga del main.py.
+* Eseguire `pip3 install instaloader`;
+* Inserire rispettivamente i dati personali: user e password tra le " " nella 6 riga del main.py.
+
+Esegui `python3 main.py` ed enjoy.
