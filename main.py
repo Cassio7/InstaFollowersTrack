@@ -1,7 +1,8 @@
 import instaloader
+import datetime
 
 insta = instaloader.Instaloader()
-
+now = datetime.datetime.now()
 try:
     insta.login("", "")
     insta.test_login()
@@ -36,7 +37,7 @@ while True:
 
     if switch=="1":
         f = open(profile.username+".txt", "w+")
-        f.write('Profile {} has {} followers:\n'.format(profile.username, profile.followers))
+        f.write('Profile {} has {} followers {}-{}-{}:\n'.format(profile.username, profile.followers,now.day,now.month,now.year))
 
         for name in names:
             f.write("{} {}\n".format(name.strip().split()[0],name.strip().split()[1]))
@@ -68,4 +69,3 @@ while True:
     if switch=="3":
         exit()
     print("-----------------------------------\n\n")
-#| (• ◡•)|Cassio(❍ᴥ❍ʋ)
